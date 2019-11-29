@@ -1,22 +1,23 @@
 {
   "name": "restful-web-service-nem",
   "version": "1.0.0",
-  "description": "restfull web service nodejs express and mongodb",
-  "main": "index.js",
+  "description": "restfull web service express and mongo",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rehiven/restfull-webservice-nem.git"
+    "url": "https://github.com/rehiven/restfull-webservice-nem.git"
   },
   "author": "rehiven",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rehiven/restfull-webservice-nem/issues"
   },
-  "homepage": "https://github.com/rehiven/restfull-webservice-nem#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/rehiven/restfull-webservice-nem#readme"
 }
