@@ -1,0 +1,5 @@
+To import book data into yoouyr mongo DB database.
+
+Make sure MongoDB is running then
+
+run 'mongo bookAPI < booksJson.js' from the command line.
