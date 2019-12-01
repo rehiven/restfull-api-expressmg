@@ -4,6 +4,7 @@
   "description": "restfull web service express and mongo",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongoose": "^5.7.13",
     "nodemon": "^2.0.1"
