@@ -1,23 +1,14 @@
 const express = require("express");
+const booksController = require('../controllers/booksController');
 
 function routes(Book) {
   const bookRouter = express.Router();
+  const controller = booksController(Book);
   //Filtra todos
   bookRouter
     .route("/books")
-    .post((req, res) => {
-      const book = new Book(req.body);
-      book.save();
-      return res.status(201).json(book);
-    })
-    .get((req, res) => {
-      Book.find((err, books) => {
-        if (err) {
-          return res.send(err);
-        }
-        return res.json(books);
-      });
-    });
+    .post(controller.post)
+    .get(controller.get);
 
   //Middleware
 
